@@ -33,18 +33,59 @@ module.exports.routes = {
   *                                                                          *
   ***************************************************************************/
 
-  'POST /login': {
+  'POST /signup': {
     controller: 'UserController',
-    action: 'login'
+    action: 'signup'
   },
 
-  'POST /verify-otp' : {
-    controller: 'UserController',
-    action: 'verifyOtp'
+  'POST /login': { 
+    controller: 'UserController', 
+    action: 'login' 
   },
 
-  'GET /food-items' : {
-    controller: 'FoodController',
-    action: 'getByRestaurant'
+  'POST /verify-otp': { 
+    controller: 'UserController', 
+    action: 'verifyOtp' 
+  },
+
+  'PUT /update-name': { 
+    controller: 'UserController', 
+    action: 'updateName' 
+  },
+
+  'PUT /update-dob': { 
+    controller: 'UserController', 
+    action: 'updateDob' 
+  },
+
+  'PUT /update-gender': { 
+    controller: 'UserController', 
+    action: 'updateGender' 
+  },
+
+  'PUT /update-profile-picture': { 
+    controller: 'UserController', 
+    action: 'updateProfilePicture' 
+  },
+
+  'PUT /update-more-info': { 
+    controller: 'UserController', 
+    action: 'updateMoreInfo' 
+  },
+
+  'PUT /update-relationship-status': { 
+    controller: 'UserController', 
+    action: 'updateRelationshipStatus' 
+  },
+
+  'PUT /update-living-status': { 
+    controller: 'UserController', 
+    action: 'updateLivingStatus' 
+  },
+
+  'POST /verify-aadhar': { 
+    controller: 'UserController', 
+    action: 'verifyAadhar' 
   }
+  
 };
